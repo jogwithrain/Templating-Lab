@@ -1,0 +1,9 @@
+1) Investigate the standard library search function. Look at the various overloads and read what they do. The very first will be the simplest ;)
+
+      a) Do the template parameter lists match the one you made? What makes them different?
+No, they don't look similar at all. Unless Class is nametype, then it's possibly similar. The thing that makes them different is that in the template parameter, they use class instead of nametype.
+      b) How does this function work differently from yours?
+The function has a couple more parameters. It takes two firsts and two lasts. It has three checks and returns either first if scecond it is found at second last, or returns last if 
+first is found at first last. The for loop breaks and continues until the while loop becomes false or it returns a value. I only use one for loop, returning a bool if the value is found or not.
+      c) Why do you think they made it work like this? Do you prefer this design?
+I think they made it like this to be able to use a lot of typenames. While very effective, it's a bit a lot to comprehend at my level and prefer my own design.
